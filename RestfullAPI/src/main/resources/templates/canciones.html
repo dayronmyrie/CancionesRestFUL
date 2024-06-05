@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Canciones</title>
+    <link rel="stylesheet" href="/js/css/styleCanciones.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Canciones</h1>
+    <form id="buscar-form" class="form-inline">
+        <label for="buscar-id">Buscar por ID:</label>
+        <input type="text" id="buscar-id" name="buscar-id">
+        <button type="submit">Buscar</button>
+    </form>
+    <form id="buscarNombre-form" class="form-inline">
+        <label>Buscar Cancion:</label>
+        <input type="text" id="buscar-nombre" name="buscar-nombre">
+        <button type="submit">Buscar</button>
+
+    </form>
+    <form id="eliminar-form" class="form-inline">
+        <label for="eliminar-id">Eliminar por ID:</label>
+        <input type="text" id="eliminar-id" name="eliminar-id">
+        <button type="submit">Eliminar</button>
+    </form>
+    <div class="button-group">
+        <button id="eliminar-todas">Eliminar todas las canciones</button>
+        <button id="mostrar-todas">Mostrar todas las canciones</button>
+    </div>
+    <ul id="lista-canciones" class="song-list"></ul>
+    <br/>
+    <a href="/formulario" class="link-button">Agregar nueva canción</a>
+</div>
+<script src="/js/js/app.js"></script>
+</body>
+</html>
+
+
+
